@@ -6,7 +6,7 @@ export default function Home() {
         <h1 className="home-title">Search Devs</h1>
         <form className="home-form">
           <input placeholder="type the username here..."/>
-          <button type="submit">Buscar</button>
+          <button className="primary-button"type="submit">Buscar</button>
         </form>
     </div>
   )

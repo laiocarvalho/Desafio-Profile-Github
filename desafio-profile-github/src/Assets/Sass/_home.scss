@@ -20,13 +20,14 @@
     border: 1px solid #ccc;
     padding-left: 25px;
   }
-  button{
-    height: 40px;
-    width: 118px;
-    background-color: $secondary-color;
-    color: $primary-color;
-    border-radius:5px;
-    border: none;
-  }
+  
 }
 
+.primary-button{
+  height: 40px;
+  width: 118px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  border-radius:5px;
+  border: none;
+}

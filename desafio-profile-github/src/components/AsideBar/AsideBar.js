@@ -62,22 +62,23 @@ export default function AsideBar() {
         <ul className="aditional-information-list">
           <li>
             <HiOutlineOfficeBuilding className="icon"/>
-            {obj.company === null ? "sem informação" : obj.company}
+            {obj.company === null ? "No information" : obj.company}
           </li>
           <li>
             <GoLocation className="icon"/>
-            {obj.location === null ? "sem informação" : obj.location}
+            {obj.location === null ? "No information" : obj.location}
           </li>
           <li>
             <AiOutlineMail className="icon"/>
-            {obj.email === null ? "sem informação" : obj.email}
+            {obj.email === null ? "No information" : obj.email}
           </li>
           <li>
-            <FiLink className="icon"/>Site
+            <FiLink className="icon"/>
+            {obj.blog ==="" ? "No information":obj.blog}
           </li>
           <li>
             <FiTwitter className="icon"/>
-            {obj.twitter_username === null ? "sem informação" : obj.twitter_username}
+            {obj.twitter_username === null ? "No information" : obj.twitter_username}
           </li>
         </ul>
       </div>

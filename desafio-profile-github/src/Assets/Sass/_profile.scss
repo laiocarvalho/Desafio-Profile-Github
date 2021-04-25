@@ -4,9 +4,13 @@
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items:center;
-  padding-right: 350px;
 }
 
 
+.main-content{
+  width: 100vw;
+  margin-left: 430px;
+  @include flex-center;
+  flex-direction: column;
+  justify-content: flex-start;
+}

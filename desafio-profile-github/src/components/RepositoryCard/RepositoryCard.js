@@ -102,8 +102,7 @@ export default function RepositoryCard() {
     const initalDate = new Date(repoObj.updated_at);
     const today = new Date();
     const diffMs = today - initalDate;
-    const diffDays = diffMs /(1000*60*60*24);
-    console.log(diffDays.toFixed(0));
+    const diffDays = diffMs /(1000*60*60*24)
     setupdatedTime(diffDays.toFixed(0)); 
   }
 
@@ -116,17 +115,15 @@ export default function RepositoryCard() {
       <header>{repoObj.name}</header>
       <p>{repoObj.description}Lorem Ipsupsum</p>
       <footer>
-        
         <span>
           <AiOutlineStar/>
           {`
-       
             ${repoObj.stargazers_count} 
             ${repoObj.stargazers_count === 1 ? "star":"stars"}
             `
           }
         </span>
-        <spa><BsDot/></spa>
+        <span><BsDot/></span>
         <span>{`Updated ${updatedTime} days ago`}</span>
       </footer>
     </div>

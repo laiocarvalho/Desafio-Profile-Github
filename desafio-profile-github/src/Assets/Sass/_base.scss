@@ -17,6 +17,8 @@ body{
 
 a{
   text-decoration: none;
+  color:$primary-color;
+  border-bottom: 1px solid $primary-color;
 }
 
 button{

@@ -1,23 +1,14 @@
 import React, {useState} from 'react'
-import api from '../../Services/Api';
 import {useHistory} from 'react-router-dom';
 
 export default function Home() {
   const [userName, setUserName]= useState();
   const history = useHistory();  
   
-  // const handleInformationSubmit =(e)=>{
-  //   async ()=>{
-  //     event.preventDefault();
-  //     const response = await api.get(`repos/`)
-  //     console.log(response);
-  //   }
-  // }
-  async function handleInformationSubmit (event){
+  
+  function handleInformationSubmit (event){
     event.preventDefault();
-    history.push({pathname:`/profile/${userName}`, state:userName})
-    const response = await api.get(`users/${userName}`)
-    console.log(response)
+    history.push({pathname:`/profile/${userName}`, state:userName})  
   }
 
   return (
